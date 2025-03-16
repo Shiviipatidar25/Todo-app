@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Manager</h1>
+        </header>
+
+        <!-- Task Form -->
+        <section class="task-form">
+            
+            <form id="taskForm">
+                <input type="text" id="taskName" placeholder="Enter task name" required>
+                <input type="date" id="dueDate" required>
+                <select id="priority" required>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <label for="priorityFilter">Filter by Priority: </label>
+            <select id="priorityFilter">
+                <option value="all">All</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </section>
+
+        <!-- Task List -->
+        <section class="task-list">
+            <h2>My Tasks</h2>
+            <ul id="taskList">
+                <!-- Task Items will appear here -->
+            </ul>
+        </section>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>
+

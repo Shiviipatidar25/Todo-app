@@ -1,0 +1,164 @@
+
+/* Basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background-color: #aaf9b6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+/* Form styling */
+.task-form {
+    margin-bottom: 40px;
+}
+
+.task-form input,
+.task-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border-radius: 7px;
+    border: 1px solid #cccccc73;
+}
+
+.task-form button {
+    width: 50%;
+    padding: 10px;
+    margin: 20px auto; /* Centering the button */
+    display: block; /* Ensures the button behaves as a block element */
+    font-size: 1rem;
+    border-radius: 7px;
+    border: 1px solid #69ab8073;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #18811db6;
+}
+
+/* Filter section */
+.filter-section,
+.task-list h2 {
+    display: inline-block; /* Aligns both elements in one row */
+    vertical-align: middle; /* Align vertically in the middle */
+    
+}
+
+.task-list h2 {
+    flex-grow: 1; /* Makes the heading take as much space as possible */
+    margin: 0; /* Removes the margin for better alignment */
+    font-size: 1.5rem; /* Adjust font size */
+    margin-top: 12px;
+   
+}
+
+.filter-section {
+    margin-left: auto; /* Pushes the filter to the right side */
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#priorityFilter {
+    padding: 7px;
+    font-size: 13px;
+    background-color: #799b769f;
+    border-radius: 7px;
+}
+
+/* Task list styling */
+.task-list ul {
+    list-style-type: none;
+}
+
+.task-list h2 {
+    text-align: center;
+}
+
+.task-list li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-list .task-name {
+    font-size: 1.2rem;
+}
+
+.task-list .task-buttons button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.task-list .edit-button {
+    background-color: #ffa500;
+    border-radius: 5px;
+}
+
+.task-list .delete-button {
+    background-color: #e74c3c;
+    border-radius: 5px;
+}
+
+.task-list .edit-button:hover {
+    background-color: #e67e22;
+}
+
+.task-list .delete-button:hover {
+    background-color: #c0392b;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .task-form button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .task-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .task-list .task-buttons {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+}
