@@ -1,0 +1,67 @@
+/* Ensure the body takes up the full height of the viewport */
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center; /* Center horizontally and vertically */
+    font-family: Arial, sans-serif;
+    background-color: #9251dd80;
+}
+
+/* Center the container div */
+.container {
+    width: 100%;
+    max-width: 400px; /* Adjust the width as needed */
+    padding: 20px;
+    background-color: #ae81e2; /* Optional styling */
+    border-radius: 8px; /* Optional, for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional, for a subtle shadow */
+}
+
+/* Additional styling for the input and button */
+.input-container {
+    display: flex;
+    gap: 10px;
+    
+    
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #8f10cfc7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color:#a06abbc7 ;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    border-bottom: 1px solid #ddd;
+    background-color: #7b4eaee4;
+    border-radius: 4px;
+}
+h2{
+    text-align: center;
+}
